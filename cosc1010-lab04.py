@@ -1,13 +1,9 @@
-# Your Name Here
+# JW Mills
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
-
+# 10/6/2024
+# Lab 04
+# Lab Section: 12
+# Sources, people worked with, help given to: None
 
 
 # This is your second lab section. It will primarily be about working with lists
@@ -99,7 +95,26 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+total_max = 0
+total_min = 0
+for temps in range(0,len(max_temps)) and range(0,len(max_temps)): 
+    total_max =  sum(max_temps)
+    total_min = sum(min_temps)
+    mean_max = total_max/(len(max_temps))
+    mean_min = total_min/(len(min_temps))
+print(f" The average of the max temperatures is {mean_max}")
+print(f" The average of the min temperatures is {mean_min}")
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+
+High_max = max(max_temps)
+Low_max = min(max_temps)
+High_min = max(min_temps)
+Low_min = min(min_temps)
+
+print(f"The High and Low of the max temperatures are {High_max} and {Low_max} degrees")
+print(f"The High and Low of the min temperatures are {High_min} and {Low_min} degrees")
+
 
 
